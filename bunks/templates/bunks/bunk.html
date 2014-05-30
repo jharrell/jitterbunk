@@ -1,0 +1,10 @@
+<h1>Hi Karel!</h1>
+
+<p>Who would you like to bunk?</p>
+
+<div>
+    <form action="/bunks/bunk" method="post">{% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Bunk!" />
+    </form>
+</div>
